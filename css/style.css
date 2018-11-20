@@ -166,19 +166,19 @@ html,*{
     position: relative;
     margin-bottom: 100px;
 }
-.item {
+.item{
     position: absolute;
-    width: 100%;
-    height: 283px;
-    opacity: 0;
     background-color: rgba(0, 0, 0,0.55);
-    cursor: pointer;
     border: 10px solid rgba(255, 255, 255,0.55);
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 322px;
 }
-.price:hover{
+.goods:hover > .price{ 
     background-image: linear-gradient( to right, rgba(26, 188, 156,1) 80%, rgba(26, 188, 156,0.44) 20%);
 }
-.goods :hover{
+.item:hover {
     opacity: 1;
 }
 .click-item{
@@ -224,6 +224,7 @@ html,*{
     background-position: 40% 50%;
     text-align: center;
 }
+
 .click-item:hover,.click-width:hover {
     background-color: #1abc9c;
 }
@@ -233,13 +234,7 @@ html,*{
     position: relative;
 }
 .price{
-    display: block;
-    width: 255px;
-    height: 40px;
     background-image: linear-gradient(to right,#323232 80%, #8c8c8c 20%);
-    position: absolute;
-    top: 88% ;
-    left: 0;
     color: #ffffff;
     font-family: "Roboto",sans-serif;
     padding-left: 13px;
@@ -248,10 +243,12 @@ html,*{
     line-height: 40px;
     text-transform: uppercase;
     letter-spacing: -0.36px;
+    width: 255px;
+    height: 40px;
 }
 .cost-one{
     display: inline-block;
-    margin-left: 93px;
+    margin-left: 97px;
 }
 .cost-two{
     display: inline-block;
@@ -267,7 +264,7 @@ html,*{
 }
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 footer{
@@ -291,6 +288,9 @@ footer{
     line-height: 90px;
     letter-spacing: -0.32px;
 }
+
+
+
 
 
 
